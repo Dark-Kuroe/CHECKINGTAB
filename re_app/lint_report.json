@@ -1,0 +1,94 @@
+{
+  "status": "Failed",
+  "kube_linter_version": "development",
+  "problems": [
+    {
+      "target_file": "/tmp/tmp579jb3wo/CHECKINGTAB/re_app/manifests/python-flask-hello-world-deployment.yaml",
+      "check": "unset-cpu-requirements",
+      "remediation": "Set CPU requests and limits for your container based on its requirements. Refer to https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits for details.",
+      "diagnostic_message": "container \"python-flask-hello-world\" has cpu request 0",
+      "object_name": "python-flask-hello-world",
+      "object_namespace": "",
+      "object_group": "apps",
+      "object_version": "v1",
+      "object_kind": "Deployment"
+    },
+    {
+      "target_file": "/tmp/tmp579jb3wo/CHECKINGTAB/re_app/manifests/python-flask-hello-world-deployment.yaml",
+      "check": "unset-cpu-requirements",
+      "remediation": "Set CPU requests and limits for your container based on its requirements. Refer to https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits for details.",
+      "diagnostic_message": "container \"python-flask-hello-world\" has cpu limit 0",
+      "object_name": "python-flask-hello-world",
+      "object_namespace": "",
+      "object_group": "apps",
+      "object_version": "v1",
+      "object_kind": "Deployment"
+    },
+    {
+      "target_file": "/tmp/tmp579jb3wo/CHECKINGTAB/re_app/manifests/python-flask-hello-world-deployment.yaml",
+      "check": "unset-memory-requirements",
+      "remediation": "Set memory requests and limits for your container based on its requirements. Refer to https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits for details.",
+      "diagnostic_message": "container \"python-flask-hello-world\" has memory request 0",
+      "object_name": "python-flask-hello-world",
+      "object_namespace": "",
+      "object_group": "apps",
+      "object_version": "v1",
+      "object_kind": "Deployment"
+    },
+    {
+      "target_file": "/tmp/tmp579jb3wo/CHECKINGTAB/re_app/manifests/python-flask-hello-world-deployment.yaml",
+      "check": "unset-memory-requirements",
+      "remediation": "Set memory requests and limits for your container based on its requirements. Refer to https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits for details.",
+      "diagnostic_message": "container \"python-flask-hello-world\" has memory limit 0",
+      "object_name": "python-flask-hello-world",
+      "object_namespace": "",
+      "object_group": "apps",
+      "object_version": "v1",
+      "object_kind": "Deployment"
+    },
+    {
+      "target_file": "/tmp/tmp579jb3wo/CHECKINGTAB/re_app/manifests/spring-boot-helloworld-deployment.yaml",
+      "check": "unset-cpu-requirements",
+      "remediation": "Set CPU requests and limits for your container based on its requirements. Refer to https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits for details.",
+      "diagnostic_message": "container \"spring-boot-helloworld\" has cpu request 0",
+      "object_name": "spring-boot-helloworld",
+      "object_namespace": "",
+      "object_group": "apps",
+      "object_version": "v1",
+      "object_kind": "Deployment"
+    },
+    {
+      "target_file": "/tmp/tmp579jb3wo/CHECKINGTAB/re_app/manifests/spring-boot-helloworld-deployment.yaml",
+      "check": "unset-cpu-requirements",
+      "remediation": "Set CPU requests and limits for your container based on its requirements. Refer to https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits for details.",
+      "diagnostic_message": "container \"spring-boot-helloworld\" has cpu limit 0",
+      "object_name": "spring-boot-helloworld",
+      "object_namespace": "",
+      "object_group": "apps",
+      "object_version": "v1",
+      "object_kind": "Deployment"
+    },
+    {
+      "target_file": "/tmp/tmp579jb3wo/CHECKINGTAB/re_app/manifests/spring-boot-helloworld-deployment.yaml",
+      "check": "unset-memory-requirements",
+      "remediation": "Set memory requests and limits for your container based on its requirements. Refer to https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits for details.",
+      "diagnostic_message": "container \"spring-boot-helloworld\" has memory request 0",
+      "object_name": "spring-boot-helloworld",
+      "object_namespace": "",
+      "object_group": "apps",
+      "object_version": "v1",
+      "object_kind": "Deployment"
+    },
+    {
+      "target_file": "/tmp/tmp579jb3wo/CHECKINGTAB/re_app/manifests/spring-boot-helloworld-deployment.yaml",
+      "check": "unset-memory-requirements",
+      "remediation": "Set memory requests and limits for your container based on its requirements. Refer to https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits for details.",
+      "diagnostic_message": "container \"spring-boot-helloworld\" has memory limit 0",
+      "object_name": "spring-boot-helloworld",
+      "object_namespace": "",
+      "object_group": "apps",
+      "object_version": "v1",
+      "object_kind": "Deployment"
+    }
+  ]
+}
