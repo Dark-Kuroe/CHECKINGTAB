@@ -1,0 +1,94 @@
+{
+  "namespace": "re-app-67d4b5",
+  "pods": [
+    {
+      "name": "python-flask-hello-world-5f56f8bd5f-ldtp4",
+      "app_name": "python-flask-hello-world",
+      "phase": "Running",
+      "condition_type": "Ready",
+      "events": [
+        "default-scheduler - Scheduled: Successfully assigned re-app-67d4b5/python-flask-hello-world-5f56f8bd5f-ldtp4 to minikube",
+        "kubelet - Pulling: Pulling image \"ghcr.io/dark-kuroe/checkingtab/python-flask-hello-world:re-app-67d4b5\"",
+        "kubelet - Pulled: Successfully pulled image \"ghcr.io/dark-kuroe/checkingtab/python-flask-hello-world:re-app-67d4b5\" in 3.128s (3.128s including waiting). Image size: 146041588 bytes.",
+        "kubelet - Created: Created container python-flask-hello-world",
+        "kubelet - Started: Started container python-flask-hello-world"
+      ],
+      "containers": [
+        {
+          "name": "python-flask-hello-world",
+          "image": "ghcr.io/dark-kuroe/checkingtab/python-flask-hello-world:re-app-67d4b5",
+          "state": {
+            "running": {
+              "started_at": "2024-10-31T12:24:25Z"
+            },
+            "terminated": null,
+            "waiting": null
+          },
+          "restarts": 0,
+          "logs": [
+            " * Debug mode: off",
+            "\u001b[31m\u001b[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\u001b[0m",
+            " * Running on all addresses (0.0.0.0)",
+            " * Running on http://127.0.0.1:5000",
+            " * Running on http://10.244.0.182:5000",
+            "\u001b[33mPress CTRL+C to quit\u001b[0m",
+            ""
+          ]
+        }
+      ],
+      "init_containers": []
+    },
+    {
+      "name": "spring-boot-helloworld-8f79b5d6d-qq2cl",
+      "app_name": "spring-boot-helloworld",
+      "phase": "Running",
+      "condition_type": "Ready",
+      "events": [
+        "default-scheduler - Scheduled: Successfully assigned re-app-67d4b5/spring-boot-helloworld-8f79b5d6d-qq2cl to minikube",
+        "kubelet - Pulling: Pulling image \"ghcr.io/dark-kuroe/checkingtab/spring-boot-helloworld:re-app-67d4b5\"",
+        "kubelet - Pulled: Successfully pulled image \"ghcr.io/dark-kuroe/checkingtab/spring-boot-helloworld:re-app-67d4b5\" in 38.844s (41.952s including waiting). Image size: 502970488 bytes.",
+        "kubelet - Created: Created container spring-boot-helloworld",
+        "kubelet - Started: Started container spring-boot-helloworld"
+      ],
+      "containers": [
+        {
+          "name": "spring-boot-helloworld",
+          "image": "ghcr.io/dark-kuroe/checkingtab/spring-boot-helloworld:re-app-67d4b5",
+          "state": {
+            "running": {
+              "started_at": "2024-10-31T12:25:04Z"
+            },
+            "terminated": null,
+            "waiting": null
+          },
+          "restarts": 0,
+          "logs": [
+            "",
+            "  .   ____          _            __ _ _",
+            " /\\\\ / ___'_ __ _ _(_)_ __  __ _ \\ \\ \\ \\",
+            "( ( )\\___ | '_ | '_| | '_ \\/ _` | \\ \\ \\ \\",
+            " \\\\/  ___)| |_)| | | | | || (_| |  ) ) ) )",
+            "  '  |____| .__|_| |_|_| |_\\__, | / / / /",
+            " =========|_|==============|___/=/_/_/_/",
+            " :: Spring Boot ::                (v3.0.0)",
+            "",
+            "2024-10-31T12:25:08.006Z  INFO 1 --- [           main] com.neo.Application                      : Starting Application v1.0.0-SNAPSHOT using Java 17.0.13 with PID 1 (/spring-boot-helloworld-1.0.0-SNAPSHOT.jar started by root in /)",
+            "2024-10-31T12:25:08.014Z  INFO 1 --- [           main] com.neo.Application                      : No active profile set, falling back to 1 default profile: \"default\"",
+            "2024-10-31T12:25:13.544Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)",
+            "2024-10-31T12:25:13.610Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]",
+            "2024-10-31T12:25:13.611Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]",
+            "2024-10-31T12:25:14.150Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext",
+            "2024-10-31T12:25:14.213Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5940 ms",
+            "2024-10-31T12:25:17.047Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''",
+            "2024-10-31T12:25:17.128Z  INFO 1 --- [           main] com.neo.Application                      : Started Application in 10.964 seconds (process running for 12.827)",
+            ""
+          ]
+        }
+      ],
+      "init_containers": []
+    }
+  ],
+  "exception": null,
+  "start": 84599.717730689,
+  "end": 84676.583178488
+}
