@@ -1,0 +1,1 @@
+This repository contains a simple hello world app in `python=3.11` using `Flask`. The app can be started using `flask run` and will use `host=0.0.0.0` and `port=5000` by default.

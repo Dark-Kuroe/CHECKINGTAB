@@ -1,0 +1,1 @@
+This app contains a simple springboot application with a Hello World page under `/hello`
