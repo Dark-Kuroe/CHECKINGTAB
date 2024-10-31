@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: spring-boot-helloworld
+    app.kubernetes.io/part-of: checkingtab
+  name: spring-boot-helloworld
+spec:
+  replicas: 1
+  selector:
+    app.kubernetes.io/name: spring-boot-helloworld
+    app.kubernetes.io/part-of: checkingtab
+    matchLabels:
+      app.kubernetes.io/name: spring-boot-helloworld
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: spring-boot-helloworld
+        app.kubernetes.io/part-of: checkingtab
+      name: spring-boot-helloworld
+    spec:
+      containers:
+      - image: ghcr.io/Dark-Kuroe/CHECKINGTAB/spring-boot-helloworld:latest
+        imagePullPolicy: Always
+        name: spring-boot-helloworld
+        ports:
+        - containerPort: 8080
+      restartPolicy: Always
