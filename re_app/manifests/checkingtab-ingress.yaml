@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  labels:
+    app.kubernetes.io/name: checkingtab
+    app.kubernetes.io/part-of: checkingtab
+  name: checkingtab
+spec:
+  rules:
+  - host: checkingtab.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: python-flask-hello-world
+            port:
+              name: port-8080
+        path: /python-flask-hello-world
+        pathType: Prefix
+      - backend:
+          service:
+            name: spring-boot-helloworld
+            port:
+              name: port-8080
+        path: /spring-boot-helloworld
+        pathType: Prefix
+status: {}

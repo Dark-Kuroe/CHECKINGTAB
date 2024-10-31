@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/name: python-flask-hello-world
+    app.kubernetes.io/part-of: checkingtab
+  name: python-flask-hello-world
+spec:
+  ports:
+  - name: port-8080
+    port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/name: python-flask-hello-world
+    app.kubernetes.io/part-of: checkingtab
+  type: ClusterIP
+status: {}
