@@ -7,9 +7,8 @@ metadata:
   name: python-flask-hello-world
 spec:
   ports:
-  - name: port-8080
-    port: 8080
-    targetPort: 8080
+  - port: 5000
+    targetPort: 5000
   selector:
     app.kubernetes.io/name: python-flask-hello-world
     app.kubernetes.io/part-of: checkingtab

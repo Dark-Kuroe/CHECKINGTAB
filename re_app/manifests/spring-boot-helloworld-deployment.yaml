@@ -20,9 +20,23 @@ spec:
       name: spring-boot-helloworld
     spec:
       containers:
-      - image: ghcr.io/Dark-Kuroe/CHECKINGTAB/spring-boot-helloworld:latest
+      - image: ghcr.io/dark-kuroe/checkingtab/spring-boot-helloworld:re-app-67d4b5
         imagePullPolicy: Always
+        livenessProbe:
+          failureThreshold: 3
+          initialDelaySeconds: 30
+          periodSeconds: 5
+          tcpSocket:
+            port: 8080
         name: spring-boot-helloworld
         ports:
         - containerPort: 8080
+        readinessProbe:
+          failureThreshold: 3
+          initialDelaySeconds: 30
+          periodSeconds: 5
+          tcpSocket:
+            port: 8080
+      imagePullSecrets:
+      - name: pull-secret
       restartPolicy: Always
