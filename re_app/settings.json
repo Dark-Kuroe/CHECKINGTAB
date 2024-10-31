@@ -1,0 +1,62 @@
+{
+    "agent": {
+        "transformation_config": "./src/re_app/transform/m2k/re_app_config.yaml",
+        "skip_build": false,
+        "build_strategy": "remote",
+        "repo_classifier": null,
+        "file_selection": [
+            "README.md",
+            "Dockerfile",
+            "docker-compose.yml",
+            "docker-compose.yaml",
+            "compose.yml",
+            "compose.yaml",
+            ".ruby-version"
+        ],
+        "inject_annotations": false,
+        "lint": true,
+        "deploy": true,
+        "improvement_increments": 3,
+        "max_manifests": 10,
+        "max_characters": 25000,
+        "allow_unsafe_secret_storage": false,
+        "augment": true,
+        "custom_images": false
+    },
+    "llm": {
+        "provider": "openai",
+        "checkpoint": "gpt-4o",
+        "temperature": 0.1,
+        "max_tokens": 4096,
+        "url": null
+    },
+    "vcs": {
+        "repo": {
+            "repo_url": "https://github.com/Dark-Kuroe/CHECKINGTAB"
+        },
+        "source_branch": "main",
+        "local_path": null,
+        "provider": "Github",
+        "target_branch": "re-app-6e8531",
+        "push_new_branch": true,
+        "tag": "re-app-6e8531",
+        "commit_author": "Re:App",
+        "commit_email": "committer@re-app.ai"
+    },
+    "container": {
+        "url": "ghcr.io",
+        "username": "",
+        "target_repo": "Dark-Kuroe/CHECKINGTAB"
+    },
+    "k8s": {
+        "kubeconfig_path": null,
+        "kubeconfig_context": null,
+        "namespace": "re-app-6e8531",
+        "timeout": 300,
+        "check_every": 5,
+        "initial_wait": 30,
+        "n_replicas": 1,
+        "ingress_class": "nginx",
+        "registry_cred_name": "pull-secret"
+    }
+}
