@@ -20,9 +20,23 @@ spec:
       name: python-flask-hello-world
     spec:
       containers:
-      - image: quay.io/checkingtab/python-flask-hello-world:latest
+      - image: ghcr.io/dark-kuroe/checkingtab/python-flask-hello-world:re-app-7c4388
         imagePullPolicy: Always
+        livenessProbe:
+          failureThreshold: 3
+          initialDelaySeconds: 30
+          periodSeconds: 5
+          tcpSocket:
+            port: 5000
         name: python-flask-hello-world
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
+        readinessProbe:
+          failureThreshold: 3
+          initialDelaySeconds: 30
+          periodSeconds: 5
+          tcpSocket:
+            port: 5000
+      imagePullSecrets:
+      - name: pull-secret
       restartPolicy: Always

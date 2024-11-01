@@ -7,8 +7,7 @@ metadata:
   name: spring-boot-helloworld
 spec:
   ports:
-  - name: port-8080
-    port: 8080
+  - port: 8080
     targetPort: 8080
   selector:
     app.kubernetes.io/name: spring-boot-helloworld
