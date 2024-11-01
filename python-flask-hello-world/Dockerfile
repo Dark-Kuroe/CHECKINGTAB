@@ -1,6 +1,6 @@
-FROM registry.access.redhat.com/ubi8/python-36
+FROM python:3.11-slim
 WORKDIR /python-flask-hello-world
 COPY . .
 RUN pip install -r requirements.txt
-EXPOSE 8080
-CMD ["python", "app.py"]
+EXPOSE 5000
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
